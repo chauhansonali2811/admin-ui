@@ -1,5 +1,6 @@
 .pagination {
     margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   .pagination button {
@@ -8,6 +9,7 @@
     border: 1px solid #ccc;
     background-color: white;
     cursor: pointer;
+    border-radius: 30px;
   }
   
   .pagination button.active {

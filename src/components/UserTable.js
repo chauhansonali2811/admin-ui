@@ -14,6 +14,7 @@ const UserTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const [editingUserId, setEditingUserId] = useState(null);
+  //const [Selected, setSelected]= useState(false);
 
  
 
@@ -125,8 +126,11 @@ console.log(editedUser);
           </tr>
         </thead>
         <tbody>
+          {console.log(selectedUsers)}
           {visibleData.map((user) => (
-            <tr key={user.id}>
+            <tr  
+            className={selectedUsers.includes(user.id) ? "row" : ""}
+            key={user.id}>
               <td padding="checkbox">
                 <input
               type="checkbox"
